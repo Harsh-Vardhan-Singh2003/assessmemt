@@ -1,0 +1,155 @@
+/* Background styling */
+body {
+  font-family: 'Verdana', sans-serif;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+}
+
+h1.form-title {
+  color: #555;
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Form styling */
+.form-container {
+  max-width: 600px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+label {
+  font-weight: bold;
+  margin: 12px 0 5px;
+  display: block;
+  color: #666;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+  border-color: #87ceeb;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button.create-btn {
+  width: 100%;
+  background-color: #87ceeb;
+  color: #fff;
+  padding: 12px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button.create-btn:hover {
+  background-color: #00aaff;
+}
+
+/* CV preview styling */
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #fafafa;
+  padding: 30px;
+}
+
+.cv-display {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cv-display h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.photo-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.photo-box img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cv-display p {
+  font-size: 1.05em;
+  margin: 8px 0;
+}
+
+.cv-display a {
+  color: #87ceeb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cv-display a:hover {
+  text-decoration: underline;
+}
+
+/* Save PDF button styling */
+button#saveBtn {
+  background-color: #87ceeb;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button#saveBtn:hover {
+  background-color: #00aaff;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .cv-display {
+    padding: 15px;
+  }
+  .photo-box img {
+    width: 110px;
+    height: 110px;
+  }
+}

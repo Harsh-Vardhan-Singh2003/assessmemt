@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <section class="form-container" id="formSection">
+        <h1 class="form-title">Build Your CV</h1>
+        
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" placeholder="Enter your full name">
+
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" placeholder="Enter your email address">
+
+        <label for="userPhone">Phone:</label>
+        <input type="tel" id="userPhone" placeholder="Enter your phone number">
+
+        <label for="linkedIn">LinkedIn Profile:</label>
+        <input type="text" id="linkedIn" placeholder="Enter LinkedIn profile ID">
+
+        <label for="githubProfile">GitHub Profile:</label>
+        <input type="text" id="githubProfile" placeholder="Enter GitHub profile ID">
+
+        <label for="workExperience">Experience:</label>
+        <textarea id="workExperience" placeholder="Describe your work experience"></textarea>
+
+        <label for="educationBackground">Education:</label>
+        <textarea id="educationBackground" placeholder="Describe your education"></textarea>
+
+        <label for="profilePic">Profile Picture:</label>
+        <input type="file" id="profilePic" accept="image/*">
+
+        <button class="create-btn" onclick="createCV()">Create CV</button>
+    </section>
+
+    <section class="cv-display fullscreen" id="cvSection" style="display: none;">
+        <h2 id="cvName"></h2>
+        <div class="photo-box">
+            <img id="cvImage" src="" alt="Profile Picture">
+        </div>
+        <div id="cvDetails">
+            <!-- CV details will go here -->
+        </div>
+        <button id="saveBtn" onclick="savePDF()">Download PDF</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
